@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:all": "npx cypress run --headed chrome",
+    "test:Registration":"npx cypress run --spec cypress/integration/2-advanced-examples/Registration/**.js --headed chrome"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,8 @@
+{
+  "field_FirstName": "#FirstName",
+  "field_LastName": "#LastName",
+  "field_Email": "#Email",
+  "field_Password": "#Password",
+  "field_CnfmPassword": "#ConfirmPassword",
+  "btn_registration": "#register-button"
+}
