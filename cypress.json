@@ -1,6 +1,6 @@
 {
     "watchForFileChanges":false,
-    "pageLoadTimeout": 50000,
+    "pageLoadTimeout": 90000,
     "ignoreTestFiles": [
         "**/*/1-getting-started/*.js",
         "**/*/2-advanced-examples/*.js"

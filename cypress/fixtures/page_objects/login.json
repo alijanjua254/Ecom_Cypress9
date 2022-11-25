@@ -1,0 +1,5 @@
+{
+  "field_Email": "#Email",
+  "field_Password": "#Password",
+  "login_btn": "form > .buttons > .button-1"
+}

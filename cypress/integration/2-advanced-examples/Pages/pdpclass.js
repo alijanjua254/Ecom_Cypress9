@@ -1,0 +1,45 @@
+import pageObjectDashboard from "/cypress/fixtures/page_objects/dashboard.json"
+import pageObjectPLP from "/cypress/fixtures/page_objects/plp.json"
+import pageObjectPDP from "/cypress/fixtures/page_objects/pdp.json"
+
+class pdp {
+    static AddProductToCart(){
+        this.OpenCategory("Books")
+        this.selectProductFromPLP()
+        this.enterQuantity(4)
+        this.AddToCartFromPDP()
+    }
+    static OpenCategory(category) {
+        if (category == "Books") {
+            cy.get(pageObjectDashboard.category_books).click()
+            cy.url().should('be.eq', "https://demowebshop.tricentis.com/books")
+
+
+        } else if (category == "Computers") {
+            cy.get(pageObjectDashboard.category_computers).click()
+            cy.url().should('be.eq', "https://demowebshop.tricentis.com/computers")
+
+        } else {
+            cy.get(pageObjectDashboard.category_books).click()
+            cy.url().should('be.eq', "https://demowebshop.tricentis.com/books")
+
+        }
+
+    }
+
+    static selectProductFromPLP() {
+        cy.get(pageObjectPLP.product_3).click()
+
+
+    }
+    static enterQuantity(quantity){
+        cy.get(pageObjectPDP.field_qty).clear().type(quantity)
+    }
+
+    static AddToCartFromPDP() {
+        cy.get(pageObjectPDP.AddToCartBtn).click()
+
+
+    }
+}
+export default pdp

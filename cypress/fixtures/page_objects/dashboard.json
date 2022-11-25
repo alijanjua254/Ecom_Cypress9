@@ -1,5 +1,7 @@
 {
   "btn_register": ".ico-register",
-  "btn_login": ".ico-login"
+  "btn_login": ".ico-login",
+  "category_books": ".block-category-navigation > .listbox > .list > :nth-child(1) > a",
+  "category_computers":".list > :nth-child(2) > a"
 
 }
