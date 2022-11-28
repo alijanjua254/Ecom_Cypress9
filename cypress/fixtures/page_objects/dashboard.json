@@ -1,6 +1,10 @@
 {
   "btn_register": ".ico-register",
   "btn_login": ".ico-login",
+  "signedInEmail": ".header-links > ul > :nth-child(1) > .account",
+  "shoppingCartBtn": ".ico-cart > .cart-label",
+  "CartPopUp": ".flyout-cart",
+  "btn_GoToCartFromCartPopUp": "input[value='Go to cart']",
   "category_books": ".block-category-navigation > .listbox > .list > :nth-child(1) > a",
   "category_computers":".list > :nth-child(2) > a"
 

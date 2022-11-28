@@ -11,6 +11,6 @@ Then('I enter valid credentials', ()=>{
 Then('I click on login button',()=>{
     login.ClickLoginBtn()
 })
-Then('I should able to login into application',()=>{
-    dashboard.visitHomepage()
+Then('I should be logged into application',()=>{
+    dashboard.verifyLogin()
 })

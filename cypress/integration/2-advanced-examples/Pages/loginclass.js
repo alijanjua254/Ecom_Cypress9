@@ -1,5 +1,6 @@
 import pageObjectLogin from "../../../fixtures/page_objects/login.json"
 import testDataLogin from "../../../fixtures/test_data/login.json"
+import pageObjectDashboard from "../../../fixtures/page_objects/dashboard.json"
 
 class login{
     static PerformLogin(){
@@ -22,7 +23,8 @@ class login{
 
     }
     static VisitLoginPage(){
-        cy.visit("https://demowebshop.tricentis.com/login")
+        //cy.visit("https://demowebshop.tricentis.com/login")
+        cy.get(pageObjectDashboard.btn_login).click()
 
     }
 

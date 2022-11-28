@@ -41,5 +41,13 @@ class pdp {
 
 
     }
+    static openShoppingCartPopup(){
+        cy.get(pageObjectDashboard.shoppingCartBtn).trigger('mouseover')
+        cy.get(pageObjectDashboard.CartPopUp).trigger('mouseover')
+    }
+    static goToCartFromPopUp(){
+        cy.get(pageObjectDashboard.btn_GoToCartFromCartPopUp).click()
+        cy.url().should('be.eq',"https://demowebshop.tricentis.com/cart")
+    }
 }
 export default pdp
