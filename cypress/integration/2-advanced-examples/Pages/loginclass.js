@@ -1,5 +1,5 @@
-import pageObjectLogin from "/cypress/fixtures/page_objects/login.json"
-import testDataLogin from "/cypress/fixtures/test_data/login.json"
+import pageObjectLogin from "../../../fixtures/page_objects/login.json"
+import testDataLogin from "../../../fixtures/test_data/login.json"
 
 class login{
     static PerformLogin(){

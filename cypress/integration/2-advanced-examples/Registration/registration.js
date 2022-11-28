@@ -1,6 +1,6 @@
-import pageObjectRegister from "/cypress/fixtures/page_objects/register.json"
-import testDataRegister from "/cypress/fixtures/test_data/register.json"
-import pageObjectDashboard from"/cypress/fixtures/page_objects/dashboard.json"
+import pageObjectRegister from "../../../fixtures/page_objects/register.json"
+import testDataRegister from "../../../fixtures/test_data/register.json"
+import pageObjectDashboard from"../../../fixtures/page_objects/dashboard.json"
 let global_email = "email" + Math.floor(Math.random()*1000 )+ "@gmail.com";
 
 

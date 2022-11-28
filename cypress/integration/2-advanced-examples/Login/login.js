@@ -1,6 +1,5 @@
 
 
-
 describe('login functionality', ()=>{
     it('tc07 go to login page', ()=>{
         cy.visit('https://demowebshop.tricentis.com/')

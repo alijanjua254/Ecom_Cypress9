@@ -1,6 +1,6 @@
-import pageObjectDashboard from "/cypress/fixtures/page_objects/dashboard.json"
-import pageObjectPLP from "/cypress/fixtures/page_objects/plp.json"
-import pageObjectPDP from "/cypress/fixtures/page_objects/pdp.json"
+import pageObjectDashboard from "../../../fixtures/page_objects/dashboard.json"
+import pageObjectPLP from "../../../fixtures/page_objects/plp.json"
+import pageObjectPDP from "../../../fixtures/page_objects/pdp.json"
 
 class pdp {
     static AddProductToCart(){

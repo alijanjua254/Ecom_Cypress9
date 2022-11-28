@@ -1,5 +1,5 @@
-import loginclass from "../Pages/loginclass";
-import pdpclass from "../Pages/pdpclass";
+import login from "../../../integration/2-advanced-examples/Pages/loginclass";
+import pdp from "../../../integration/2-advanced-examples/Pages/pdpclass";
 
 //verify user is able to add product to cart from pdp screen with logged-in user
 describe('pdp functionality',()=>{
@@ -10,19 +10,19 @@ describe('pdp functionality',()=>{
 //
 // });
     it('should login with valid creds and add product to cart', ()=>{
-        loginclass.PerformLogin()
+        login.PerformLogin()
         //if I want to run the test case by referencing only 1 function
         //(I cannot pass category through here dynamically if I do that
 
-        pdpclass.AddProductToCart()
+        pdp.AddProductToCart()
 
         // if I want to run the test case by referencing all the functions
         //here I can enter the category, quantity etc. dynamically
 
-        // pdpclass.OpenCategory("Books")
-        // pdpclass.selectProductFromPLP()
-        // pdpclass.enterQuantity(3)
-        // pdpclass.AddToCartFromPDP()
+        // pdp.OpenCategory("Books")
+        // pdp.selectProductFromPLP()
+        // pdp.enterQuantity(3)
+        // pdp.AddToCartFromPDP()
 
 
 
