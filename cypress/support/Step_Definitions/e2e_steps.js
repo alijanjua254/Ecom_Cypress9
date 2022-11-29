@@ -5,6 +5,6 @@ Then('I accept terms and conditions and click on checkout button',()=>{
     checkout.goToCheckout()
 
 })
-Then('I click continue on billing screen',()=>{
-    checkout.enterBillingAddress()
+Then('I select country as {string} and click continue',(country)=>{
+    checkout.enterBillingAddress(country)
 })

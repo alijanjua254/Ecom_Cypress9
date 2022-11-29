@@ -16,7 +16,7 @@ Feature: Test Case for PDP
     Then I hover on shopping cart from header
     And I click on Go to Cart button from the shopping Cart Pop Up
     Then I accept terms and conditions and click on checkout button
-    Then I click continue on billing screen
+    Then I select country as "Argentina" and click continue
 #    Then I click continue on shipping address screen
 #    Then I click continue button on shipping method screen
 #    Then I click continue button on payment method screen
