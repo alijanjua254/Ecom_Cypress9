@@ -8,10 +8,13 @@ class pdp {
         this.selectProductFromPLP()
         this.enterQuantity(4)
         this.AddToCartFromPDP()
+        this.openShoppingCartPopup()
+        this.goToCartFromPopUp()
+
     }
     static OpenCategory(category) {
         if (category == "Books") {
-            cy.get(pageObjectDashboard.category_books).click()
+            cy.get(pageObjectDashboard.category_books).should('not.be.disabled').click()
             cy.url().should('be.eq', "https://demowebshop.tricentis.com/books")
 
 
